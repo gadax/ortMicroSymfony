@@ -15,4 +15,9 @@ class ArchitectController extends AbstractController
     {
         return Response('<html><body>ok</body></html>');
     }
+
+    public function new()
+    {
+        return Response('<html><body>ok</body></html>');
+    }
 }

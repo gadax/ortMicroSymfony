@@ -1,0 +1,12 @@
+index:
+  path: /
+  controller: App\Controller\DefaultController::index
+
+number:
+  path: /lucky/{max}
+  controller: App\Controller\LuckyController::number
+
+db:
+  path: /db
+  controller: App\Controller\LuckyController::db
+

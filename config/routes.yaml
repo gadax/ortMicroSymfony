@@ -1,12 +1,11 @@
-index:
-  path: /
-  controller: App\Controller\DefaultController::index
+architect_new:
+  path: /architect/new
+  controller: App\Controller\ArchitectController::new
 
-number:
-  path: /lucky/{max}
-  controller: App\Controller\LuckyController::number
+architect_list:
+  path: /architect/list
+  controller: App\Controller\ArchitectController::list
 
-db:
-  path: /db
-  controller: App\Controller\LuckyController::db
-
+building_list:
+  path: /architect/new
+  controller: App\Controller\BuildingController::list

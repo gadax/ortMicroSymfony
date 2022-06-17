@@ -60,4 +60,9 @@ class Architect
         return $this->origin = $new;
     }
 
+    public function __toString(): string
+    {
+        return $this->getId();
+    }
+
 }

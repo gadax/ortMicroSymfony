@@ -2,8 +2,10 @@
 
 namespace App\Controller;
 
+use App\Entity\Building;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Routing\Annotation\Route;
 
 class BuildingController extends AbstractController
@@ -11,8 +13,14 @@ class BuildingController extends AbstractController
     /**
      * @Route("/building", name="app_building")
      */
-    public function list()
+    public function list(EntityManagerInterface $entityManager)
     {
-        return Response('<html><body>ok</body></html>');
+        $buildings = $entityManager
+            ->getRepository(Building::class)
+            ->findAll();
+
+        return $this->render('building/list.html.twig', [
+            'buildings' => $buildings,
+        ]);
     }
 }

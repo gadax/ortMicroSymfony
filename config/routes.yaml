@@ -6,6 +6,14 @@ architect_list:
   path: /architect/list
   controller: App\Controller\ArchitectController::list
 
+architect_edit:
+  path: /architect/list
+  controller: App\Controller\ArchitectController::list
+
+architect_show:
+  path: /architect/list
+  controller: App\Controller\ArchitectController::list
+
 building_list:
   path: /architect/new
   controller: App\Controller\BuildingController::list

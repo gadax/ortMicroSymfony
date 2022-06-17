@@ -13,8 +13,8 @@ class ArchitectType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('name',TextType::class, array('attr' => array('class' => 'form-group','style' => 'margin-left:10px')))
-            ->add('origin',TextType::class, array('attr' => array('class' => 'form-group','style' => 'margin-left:10px')))
+            ->add('name',TextType::class, array('attr' => array('class' => 'form-control','style' => 'margin-left:10px')))
+            ->add('origin',TextType::class, array('attr' => array('class' => 'form-control','style' => 'margin-left:10px')))
         ;
     }
 

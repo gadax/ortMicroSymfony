@@ -59,5 +59,14 @@ class Building
      */
     private $architect;
 
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    public function getPlace()
+    {
+        return $this->place;
+    }
 
 }

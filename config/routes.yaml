@@ -1,3 +1,10 @@
+index:
+  path: /
+  controller: Symfony\Bundle\FrameworkBundle\Controller\RedirectController::urlRedirectAction
+  defaults:
+      path: /architect
+      permanent: true
+
 # architect_new:
 #   path: /architect/new
 #   controller: App\Controller\ArchitectController::new

@@ -16,5 +16,5 @@
 
 
 building_list:
-  path: /architect/new
+  path: /building/list
   controller: App\Controller\BuildingController::list

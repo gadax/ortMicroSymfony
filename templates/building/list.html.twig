@@ -7,11 +7,7 @@
     <header><h1>Buildings</h1></header>
 
     <aside>
-<<<<<<< HEAD
        Search : <input type="text" placeholder="name" class="form-control mb-4" id="searcher">
-=======
-       Search : <input type="text" placeholder="name" class="form-control" id="searcher">
->>>>>>> d609a121659b73847a8e1a209266317c70e22746
     </aside>
 
     <section id="list">
@@ -21,7 +17,7 @@
             <a href="/architect/{{ building.architect }}">{{ building.architectName }}</a>
             </div>
         {% else %}
-            <div class="text-info">no records found</div>
+            <div class="text-info">No records found ❌</div>
         {% endfor %}
     </section>
 

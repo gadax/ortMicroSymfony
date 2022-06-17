@@ -2,6 +2,7 @@
 
 namespace App\Form;
 
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use App\Entity\Architect;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -12,8 +13,8 @@ class ArchitectType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('name')
-            ->add('origin')
+            ->add('name',TextType::class, array('attr' => array('class' => 'form-group','style' => 'margin-left:10px')))
+            ->add('origin',TextType::class, array('attr' => array('class' => 'form-group','style' => 'margin-left:10px')))
         ;
     }
 

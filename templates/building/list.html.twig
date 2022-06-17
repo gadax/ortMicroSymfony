@@ -6,13 +6,19 @@
 
     <header><h1>Buildings</h1></header>
 
-    {% for building in buildings %}
-        <div>
-        {{ building.name }} : {{ building.place }} ::
-        <a href="/architect/{{ building.architect }}">architect</a>
-        </div>
-    {% else %}
-        <div class="text-info">no records found</div>
-    {% endfor %}
+    <aside>
+       Search : <input type="text" placeholder="name" class="form-control" id=searcher>
+    </aside>
+
+    <section id="list">
+        {% for building in buildings %}
+            <div>
+            {{ building.name }} : {{ building.place }} ::
+            <a href="/architect/{{ building.architect }}">{{ building.architectName }}</a>
+            </div>
+        {% else %}
+            <div class="text-info">no records found</div>
+        {% endfor %}
+    </section>
 
 {% endblock %}

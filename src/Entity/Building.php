@@ -73,4 +73,9 @@ class Building
     {
         return $this->architect;
     }
+
+    public function getArchitectName()
+    {
+        return $this->architect->getName();
+    }
 }

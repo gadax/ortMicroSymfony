@@ -50,4 +50,14 @@ class Architect
         return $this->name = $new;
     }
 
+    public function getOrigin(): ?string
+    {
+        return $this->origin;
+    }
+
+    public function setOrigin(string $new)
+    {
+        return $this->origin = $new;
+    }
+
 }

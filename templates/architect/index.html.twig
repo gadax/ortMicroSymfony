@@ -21,8 +21,8 @@
                 <td>{{ architect.name }}</td>
                 <td>{{ architect.origin }}</td>
                 <td>
-                    <a href="{{ path('app_architect_show', {'id': architect.id}) }}">show</a>
-                    <a href="{{ path('app_architect_edit', {'id': architect.id}) }}">edit</a>
+                    <a class="btn btn-primary" href="{{ path('app_architect_show', {'id': architect.id}) }}">show</a>
+                    <a class="btn btn-secondary" href="{{ path('app_architect_edit', {'id': architect.id}) }}">edit</a>
                 </td>
             </tr>
         {% else %}
@@ -33,5 +33,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('app_architect_new') }}">Create new</a>
+    <a class="btn btn-primary btn-lg" href="{{ path('app_architect_new') }}">Create new</a>
 {% endblock %}

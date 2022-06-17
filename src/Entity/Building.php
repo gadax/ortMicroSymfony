@@ -69,4 +69,8 @@ class Building
         return $this->place;
     }
 
+    public function getArchitect()
+    {
+        return $this->architect;
+    }
 }

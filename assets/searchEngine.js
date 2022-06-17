@@ -2,7 +2,7 @@ window.addEventListener('load' , () => {
 	let searcher = document.getElementById('searcher');
 	let list = document.getElementById('list');
 
-	searcher.addEventListener('input', () => {
+	if(searcher != null) searcher.addEventListener('input', () => {
 
 		for(ele of list.getElementsByTagName('div'))
 		{

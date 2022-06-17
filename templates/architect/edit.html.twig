@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Architect{% endblock %}
+
+{% block body %}
+    <h1>Edit Architect</h1>
+
+    {{ include('architect/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_architect_index') }}">back to list</a>
+
+    {{ include('architect/_delete_form.html.twig') }}
+{% endblock %}

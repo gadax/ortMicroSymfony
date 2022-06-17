@@ -21,17 +21,17 @@
                 <td>{{ architect.name }}</td>
                 <td>{{ architect.origin }}</td>
                 <td>
-                    <a class="btn btn-primary" href="{{ path('app_architect_show', {'id': architect.id}) }}">show</a>
-                    <a class="btn btn-secondary" href="{{ path('app_architect_edit', {'id': architect.id}) }}">edit</a>
+                    <a class="btn btn-primary" href="{{ path('app_architect_show', {'id': architect.id}) }}">Show 👁</a>
+                    <a class="btn btn-secondary" href="{{ path('app_architect_edit', {'id': architect.id}) }}">Edit ✏️</a>
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="4">no records found</td>
+                <td colspan="4">No records found ❌</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <a class="btn btn-primary btn-lg" href="{{ path('app_architect_new') }}">Create new</a>
+    <a class="btn btn-primary btn-lg" href="{{ path('app_architect_new') }}">Create new ✚</a>
 {% endblock %}

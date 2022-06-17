@@ -62,6 +62,19 @@ class ArchitectController extends AbstractController
     }
 
     /**
+     * @Route("/{id}", name="app_architect_delete", methods={"POST"})
+     */
+    public function delete(Request $request, Architect $architect, EntityManagerInterface $entityManager): Response
+    {
+        if ($this->isCsrfTokenValid('delete'.$architect->getId(), $request->request->get('_token'))) {
+            $entityManager->remove($architect);
+            $entityManager->flush();
+        }
+
+        return $this->redirectToRoute('app_architect_index', [], Response::HTTP_SEE_OTHER);
+    }
+
+    /**
      * @Route("/{id}/edit", name="app_architect_edit", methods={"GET", "POST"})
      */
     public function edit(Request $request, Architect $architect, EntityManagerInterface $entityManager): Response
@@ -79,18 +92,5 @@ class ArchitectController extends AbstractController
             'architect' => $architect,
             'form' => $form,
         ]);
-    }
-
-    /**
-     * @Route("/{id}", name="app_architect_delete", methods={"POST"})
-     */
-    public function delete(Request $request, Architect $architect, EntityManagerInterface $entityManager): Response
-    {
-        if ($this->isCsrfTokenValid('delete'.$architect->getId(), $request->request->get('_token'))) {
-            $entityManager->remove($architect);
-            $entityManager->flush();
-        }
-
-        return $this->redirectToRoute('app_architect_index', [], Response::HTTP_SEE_OTHER);
     }
 }

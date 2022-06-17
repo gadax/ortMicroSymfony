@@ -7,12 +7,13 @@ architect_list:
   controller: App\Controller\ArchitectController::list
 
 architect_edit:
-  path: /architect/list
-  controller: App\Controller\ArchitectController::list
+  path: /architect/edit
+  controller: App\Controller\ArchitectController::edit
 
 architect_show:
-  path: /architect/list
-  controller: App\Controller\ArchitectController::list
+  path: /architect/show
+  controller: App\Controller\ArchitectController::show
+
 
 building_list:
   path: /architect/new

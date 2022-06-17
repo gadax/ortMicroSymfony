@@ -1,18 +1,18 @@
-architect_new:
-  path: /architect/new
-  controller: App\Controller\ArchitectController::new
+# architect_new:
+#   path: /architect/new
+#   controller: App\Controller\ArchitectController::new
 
-architect_list:
-  path: /architect/list
-  controller: App\Controller\ArchitectController::list
+# architect_list:
+#   path: /architect/list
+#   controller: App\Controller\ArchitectController::list
 
-architect_edit:
-  path: /architect/edit
-  controller: App\Controller\ArchitectController::edit
+# architect_edit:
+#   path: /architect/edit
+#   controller: App\Controller\ArchitectController::edit
 
-architect_show:
-  path: /architect/show
-  controller: App\Controller\ArchitectController::show
+# architect_show:
+#   path: /architect/show
+#   controller: App\Controller\ArchitectController::show
 
 
 building_list:
